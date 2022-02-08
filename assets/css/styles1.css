@@ -132,7 +132,7 @@ ul li::after {
     color: white;
 }
 /* este pseudo-element configura um traço after ou before do conteúdo, sempre devemos utilizar o content
-e configurar do geito que quizermos as demais configurações css deste elemento*/
+e configurar do jeito que quizermos as demais configurações css deste elemento*/
 
 p::first-letter {
     font-size: 50px;
