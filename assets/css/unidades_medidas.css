@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/* scroll-behavior: smooth rola a página suavemente */
+
+h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    color: darkred
+}
+
+h2 {
+    font-size: 2.9rem;
+    color: darkred
+}
+.pai {
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.6rem;
+
+}
+
+p {
+    font-size: 2.6rem;
+}
+
+/* se utilizarmos a unidade vw ela terá o tamanho da view port
+ou seja, se adapta ao tamanho da tela*/
+
+/* podemos configurar a tag html no css para 62,5%, que
+corresponde a uma fonte de 10px, entretanto o navegador utiliza
+por default uma fonte de 16px, entrão podemos configurar o rem ou o em 
+para 1.6*/
+
+/* esta configuração do em da tag p basea-se para tamanho da sua fonte 
+relativo a tag pai mais próxima, no caso a div de classe pai
+rem basea-se no elemento root, no caso a tag html*/
+
+/* no navegador a unidade de medida default é relativa
+e não a absluta*/
+
+.cor1 {
+    color:rgb(26, 10, 126);
+}
+
+.cor2 {
+    color:rgb(26, 10, 126);
+}
+
+.color-one{
+    background: rgb(172, 222, 223);
+}
+
+.color-two{
+    background: rgb(201, 203, 235);
+}

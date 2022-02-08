@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: sans-serif;
+    font-size: 40px;
+}
+
+.grid {
+    max-width: 1200px; /* define largura máxima da grid  */
+    margin: 0 auto; /* centraliza a grid entre os 1200px */
+    display: grid;
+    /*grid-template-columns: 200px 1fr 2fr;  fragmento se adequa ao espaço restante de 200px */
+    /*grid-template-columns: 1fr 5fr 1fr;  cada fragmento corresponde a uma coluna - podemos colocar com o repeat(10, 1fr)*/
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* min de 320px max de 1fr */
+    grid-template-rows: 2fr 3fr 1fr 7fr; /* altura da linhas - podemos utilizar o repeat também */
+    gap: 30px; /* espaçamento de cada fragmento da grid */
+}
+
+.grid div {
+    background: tomato;
+    min-height: 100px;
+}
+
+.grid div:nth-child(5) {
+    background: darkred;
+    /* grid-column-start: 2;
+    grid-column-end: 4;  expandimos a div da coluna 2 até a 4*/
+    grid-row: span 2; /* expandimos a linha da div 5 em 2 linhas */
+    grid-column: span 2; /* expandimos a div  em 2 colunas*/
+}
+/* podemos colocar outra div nas mesmas colunas da configuração
+acima, e controlar a camada com o z-index, podemos ainda,
+definir a(s) linha(s) e sobrepó-las também */
+
+@media (max-width: 768px) {
+    .grid div:nth-child(5) {
+        grid-column: span 1;
+    }        
+}
+
+
+

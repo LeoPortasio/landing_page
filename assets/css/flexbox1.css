@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /*flex-wrap: wrap;  permite quebrar a linha */
+    /* align-content:flex-end; */
+    /*flex-flow: row wrap;  atalho para flex direction e flex wrap */
+    flex-flow: row nowrap;
+    background: yellow;
+    height: 800px;
+}
+
+/*  flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; 
+    configuração default, quando indicamos o display: flex;*/
+
+.flex-item {
+    /* flex: 1 1 320px; */
+    /* flex-grow: 1;  pega o elemento e com o espaço sobrando da tela estica esses elementos(divs/flex-items)
+    flex-basis: 320px;  pega o elemento e distribui no espaço determinado e se a tela aumentar se adapta
+    flex-shrink: 0; não permite o elemento diminuir em tela menor */
+    /*width: 32%;  em relação ao espaço que sobra não em relação ao container e sim aos items em si */
+    /* height: 200px; */
+    width: 100%;
+    color: white;
+    background: red;
+}
+
+.flex-item:nth_child(1) {
+     order: 1; /* ordena colocando o item por último, nºs positivos para direita e negativos para esquerda */
+}
+
+/* .flex-item:nth-child(3) {
+    align-self: flex-end;  alinha na perpendicular
+}
+
+.flex-item:nth-child(4) {
+    align-self: center;
+}
+
+.flex-item:nth-child(2) {
+    align-self: stretch;
+} */
+
+/* .flex-item:nth-child(2) {
+    flex: 10 1 320px;
+    background: purple;
+} */
+
+/* podemos usar atalho flex para flex grow, flex basis e flex shrink 
+w3school recomenda utilizar o atalho*/
+
+/* os filhos do flex-container, os flex-items sofrem alterações
+em suas orientações de layout, a depender das configurações
+dos sguintes elementos:
+
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+*/
+
+/* 
+ flex-direction: - eixo principal 
+opções: row | row-reverse | columns | columns-reverse 
+
+ justify-content: posicionamento proporcional dos flex-items dentro do flex-container
+ opções: flex-start | center | flex-end | space-around | space-between | space-evenly
+ 
+
+ align-items:  eixo perpendicular
+opções: flex-start | center  | flex-end | baseline | stretch |  
+*/
+
+/* OVERFLOW
+se tivermos varios elementos flex-items, com a diminuição da tela do usuário
+ou um dispositivo mobile, vai ocorrer o overflow, ou seja, os 
+elementos ficam desencontrados...embaralham na tela do usuário.
+neste caso utilizamos:
+
+flex-wrap: wrap;
+
+ele permite pular a linha
+*/
+
+/* align-content: alinha pelo conteúdo
+opções: flex-start | flex-end | center | stretch | space-around | space-between | space-evenly
+*/
+
+/* inline-flex: o flex-container se comporta como um bloco 
+em linha, outro bloco poderá ocupar o seu espaço à sua esquerda
+sem prcisar flutuar por exemplo como acontece com as classes de
+container.
+*/
+
+
+
+
+
+

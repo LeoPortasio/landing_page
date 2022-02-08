@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    padding: 15px;
+}
+
+.grip::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+/* esta classe configura o pseudo-elemento after
+a limpar conteúdos a esquerda ou direita(both) da
+div principal */
+
+.grid .col {
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
+/* utilizava-se o float para fazer menus, grids, etc
+nos dias de hoje utilizamos grid ou flex-box */
+
+/* display: inline-block; desconfigura as divs a depender da disposição
+que as divs estão escritas no html e vice- e versa. Temos que
+ir adaptando (gambiarra) a disposição das "grids" na tela*/
+
+/* os displays mais utilizados são:
+inline
+block
+flex
+grid */
+
+/* a configuração do float, fala para a div que irá ocupar 
+o seu espaço e liberar o resto do espaço do bloco. Também não sobrepõe a margem 
+como é o caso sem o float.*/
+
+/* p {
+    clear: left;
+} */
+
+/* clear: left na tag p dentro do css,
+limpa o grid e a tag p no html que vem logo depois da div
+passa a se posicionar logo abaixoda div(como esperado)
+e não no espaço que sobra na esquerda da div. Esta configuração
+serve para ambos os lados(left ou right), então devemos modificar
+tanto na div como na tag p dentro do css o valor de float e clear
+respectivamente. clear: both limpa amos os lados, então não precisamos
+alterar o valor de float*/
+
+

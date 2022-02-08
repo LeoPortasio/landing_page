@@ -1,0 +1,25 @@
+body {
+    color: black;
+}
+
+
+.nome {
+    color:red;
+}
+
+.hexa {
+    color: #687707;
+}
+
+.rgb {
+    color: rgb(23, 43, 156);
+}
+
+.hsl {
+    background: hsl(0, 100%, 50%);
+}
+
+.hsla {
+    background: hsla(0, 100%, 50%, 60%);
+}
+

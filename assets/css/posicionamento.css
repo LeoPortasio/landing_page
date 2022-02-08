@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+}
+
+.pai {
+    height: 200vh;
+}
+
+.filha1, .filha2, .filha3{
+    width: 300px;
+    height: 300px;
+    background: red;
+    margin: 10px;
+    position: static;
+}
+
+.filha2 {
+    background: greenyellow;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 1;
+}
+
+.filha1 {
+
+}
+
+.filha3 {
+    position: relative;
+    background: blue;
+    top: 100px;
+    left: 100px;
+}
+
+.outra {
+    position: absolute;
+    background: white;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+ul {
+    height: 100px;
+    overflow-y: auto;
+}
+ul li.sticky {
+    position: sticky;
+    background: gray;
+    top: 0;
+
+}
+/* 
+position: relative --> permite alterar as propriedades 
+ da posição do objeto(div) em relação à página ou a outro objeto, contudo,
+ não altera o flow da página */
+
+ /* position: absolute --> permite alterar as propriedades 
+ da posição do objeto(div) em relação à página ou a outro objeto, entretanto
+ é como se o objeto não ocupasse mais aquele espaço da relação statica, ele ficará "por cima"
+ dos outros elementos da página */
+
+
+/* z-index --> indica em qual camada estamos na página, neste caso,
+precisamos de dois elementos em camadas, ou seja, dois elementos
+com propriedades absolutas, exemplo: camada1, camada2, etc
+se utilizarmos número negativo na camada, ela fica atrás dos outros
+elementos.*/
+
+/* position: fixed; --> fixa o objeto na página, podemos rolar a página
+que o objeto ficará fixado. */
+
+/* position: stick; */

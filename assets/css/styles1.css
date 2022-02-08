@@ -1,0 +1,176 @@
+body {
+    margin: 10px;
+    padding: 10px;
+}
+
+[checked] {
+    width: 30px;
+    height: 30px;
+}
+
+[head~="valor1"] {
+    color: darkslategrey;
+}
+/* faz a seleção do atributo head(criado por nós)
+ que contenha valor. Pode ter vários valores lá no HTML
+ separador por espaço*/
+
+ .heading {
+     transition: all 400ms ease-in-out;
+ }
+
+
+ .heading:hover {
+     background: darkseagreen;
+ }
+/* ____________________________________________________________ */
+
+
+/* Pseudo-Classe */
+
+ a {
+     color: blue ;
+ }
+/* link */
+
+
+ a:link {
+     color: darkred;
+ }
+ /* link nunca visitado */
+
+
+ a:visited {
+     color: darkolivegreen
+ }
+/* link já foi visitado */
+
+a:hover {
+    background: green;
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    background: darkslategrey;
+    color: white;
+    text-decoration: none;
+}
+/* mostra que o link está ativo, assumindo estas configurações */
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+/* configuração quando clicamos no formulário
+fica com uma borda solida de 1px e sobra de 0.5px*/
+
+
+input:disabled {
+    background:darkslategrey;
+    cursor: not-allowed;
+}
+/* no html a tag tem que estar com o disabled
+então configuramos aqui no css como ficará o formulário
+desabilitado, no caso com essa cor específica e o mouse
+sem a seta, com um círculo cortado */
+
+input:checked + h1 {
+    background:lawngreen;
+    color: white;
+}
+
+h1 {
+    color: darkslategrey;
+}
+
+input:not(:checked) + p {
+    background:green;
+    color: white;
+}
+
+.pai .lista li:last-child {
+    background: green;
+}
+/* acesso por herança ao atributo pai da tag div
+passando pelo atributo lista da tag ul chegando na tag li,
+selecionando especificamente o último item.
+*/
+
+ul li:nth-child(even)  {
+    background-color: darkslategrey;
+}
+
+ul li:nth-child(3n)  {
+    background-color: darkolivegreen;
+}
+/* esta pseudo-classe começa contar a partir do 3º id */
+
+
+ul li:nth-child(odd)  {
+    background-color: darkturquoise;
+}
+/* esta pseudo-classe configura li pares ou ímpares, observe que não sobrescreve 
+a configuração css que acessa o li pela classe que configura
+o último item da lista na cor green*/
+
+p:not(.meio) {
+    color: grey;
+}
+/* esta pseudo-classe configura a tag p menos a tag p que contém a classe meio */
+
+
+
+/* ____________________________________________________________ */
+
+/* Pseudo-Elemento */
+
+
+ul li::after {
+    content: "-";
+    color: white;
+}
+/* este pseudo-element configura um traço after ou before do conteúdo, sempre devemos utilizar o content
+e configurar do geito que quizermos as demais configurações css deste elemento*/
+
+p::first-letter {
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+    color: darkslategrey;
+}
+/* este pseudo-element configura a primeira letra da tag p */
+
+
+p::first-line {
+    background: darkseagreen;
+    color: white;
+}
+
+p::selection {
+    background: black;
+    color:white;
+}
+/* este pseudo-element configura quando alguém lselecionar
+o texto em nosso site */
+
+.form-field::placeholder {
+    font-size: 15px;
+    color: red;
+
+}
+/* este pseudo-element configura pela classe form-field
+a pseudo-classe placeholder. Quem tem a classe form-field
+no html é a tag input*/
+
+
+
+
+
+
+
+
+
+

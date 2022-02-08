@@ -1,0 +1,178 @@
+Ctrl + Shift + i              |
+acerta a indentação no VSCode | 
+                              |
+Crlt + u                      |
+visualiza o código da         |
+página no chrome              |
+-------------------------------
+
+
+ <!DOCTYPE html>
+
+ <html lang="pt-BR">
+
+ <head>
+	<meta charset="UTF-8">
+	<title>Meu Site</title>
+
+ </head>
+
+
+ <body>
+
+	<p>Olá Mundo!</p>
+		
+ </body>
+ </html>
+
+-----------------------------------------------------------
+🔸️atributo id
+--> identificador único para cada tag html
+
+<h1 id="cabecalho-um">
+  Título vem aqui
+</h1>
+
+Obs.: Identificador será importante quando utilizarmos css e java script
+-----------------------------------------------------------
+🔸️atributo class
+--> as tags podem ter mais de uma classe 
+
+
+ <h1 id="cabecalho-dois" class="fundo-branco border-esquerda"> Título vem aqui </h1>
+
+-----------------------------------------------------------
+
+🔸️tag <style>
+
+ fica localizada dentro da tag <head>
+ onde aplicamos o css dentro do html
+
+ <style>
+        h1 {
+            background: red;
+
+        }
+
+        p {
+            background: blue;
+
+        }
+
+        #texto-inicio {
+
+            background: yellow;
+        }
+
+        #cabecalho_dois {
+            background: purple;
+        }
+    </style>
+
+
+ obs.: a tag id se sobrepõe à tag class, tag id tem mais especificidade.
+
+ Então é recomendado inserir estilo css em classes do que em id's.
+
+
+ ➡️ tags para texto | in-line
+ 
+<b>negrito - estado físico </b>
+
+<strong>palavra dita com mais força - estado lógico</strong> (buscador do google ou leitor de tela)
+
+
+<i>itálico</i>
+
+<em>itálico - dar ênfase no texto </em> (buscador do google ou leitor de tela)
+
+____________________________________________________________
+
+<a href="" target='_blank'>link</a> (podemos colocar um arquivo ou um link para um site) (_blank - outra aba do browser)
+
+podemos utilizar também na tag <a> o atributo rel (relação entre os links da sua página com os links externos)
+
+https://developers.google.com/search/docs/advanced/guidelines/qualify-outbound-links?hl=pt-br
+
+____________________________________________________________
+
+<img src="" alt="" width="50" height="44">imagem</img> (podemos colocar o caminho da imagem ou o link da imagem) alt(descrição da imagem)
+alt também é semântico para o leitor de tela.
+com width e height podemos definir a largura e altura respectivamente
+
+ou ainda definir o tamanho da imagem na tag <style></style> dentro do <head></head> 
+
+<style>
+	.nome_classe{
+		width: 20px;
+		height: 60px;
+	}
+
+</style>
+____________________________________________________________
+
+<del>risca, mas mantém no texto a palavra, mostrando que é uma exclusão</del>
+<ins>sublinha, mostrando que é uma inserção de alguma exclusão</ins>
+
+
+<s>risca a palavra</s>
+<u>sublinha a palavra</u>
+____________________________________________________________
+
+<small>texto menor</small>
+
+
+2<sup>2</sup>
+
+H<sub>2</sub>O
+
+
+<br> quebra linha, não tem fechamento
+
+<q>citação</q>
+
+
+<spam style="color: red"> 
+ conteiner in line
+ </spam> 
+____________________________________________________________________________
+
+ ➡️ tags fora de texto | não são in-line
+ 
+ <blockquote cite="https://...">
+ bloco de citação....
+ </blockquote>
+
+não podemos utilizá-lo dentro da tag <p>, entretanto dentro de <blockquote>, podemos utilizar a tag <p>
+
+___________________________________________
+
+<hr>
+uma linha de separação, ocupa um bloco inteiro de uma linha
+
+___________________________________________
+
+<pre> tudo dentro desta tag mantém-se o formato do texto </pre>
+
+<pre><code>
+
+nome = ''
+print(input('qual seu nome: '))
+print(f'olá {nome}')
+ 	
+ </code></pre>
+  
+ __________________________________________
+ 
+ <div>bloco fora de parágrafo </div> não é in-line
+ 
+ 
+ todas as tags html
+ https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
+ 
+ 
+ 
+ 
+ 
+ 	
+

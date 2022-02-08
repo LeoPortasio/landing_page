@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+            display: block;
+        }
+
+        label1 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>Meu Formulário</p>
+        <p>
+            <input type="text" id="nome1" name="nome1" placeholder="Seu nome" disable>
+        </p>
+
+    </form>
+    <br>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>Meu Formulário</p>
+        <p>
+            <input type="text" id="nome2" name="nome2" placeholder="Seu nome" value="Leo Portasio">
+        </p>
+        <p>
+            <button type="submit"> Enviar</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+    <br>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>Meu Formulário</p>
+        <p>
+            <input type="text" id="nome3" name="nome3" placeholder="Seu nome">
+        </p>
+        <p>
+            <button type="submit"> Enviar</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+    <br>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>Meu Formulário</p>
+        <p>
+            <input type="text" id="nome4" name="nome4" placeholder="Seu nome" readonly>
+        </p>
+
+    </form>
+    <br>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>Meu Formulário</p>
+        <p>
+            <label for="nome5">Nome:</label>
+            <input type="text" id="nome5" name="nome5" placeholder="Seu nome" required>
+        </p>
+        <p>
+            <button type="submit"> Enviar</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+    <hr>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p><strong>Cadastro:</p></strong>
+        <p>
+            <label for="dev">Nome:</label>
+            <input type="text" id="dev" name="dev" placeholder="Seu nome" required>
+        </p>
+        <p>
+            <label for="email">e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="ex: nome@email.com" required>
+        </p>
+        <p>
+            <label for="url">Github:</label>
+            <input type="url" id="url" name="url" placeholder="ex: https://nome_git@github.com" required>
+        </p>
+        <p>
+            <label for="search">Github:</label>
+            <input type="search" id="search" name="search" placeholder="ex: https://nome_git@github.com" required>
+        </p>
+        <p>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+        </p>
+        <p>
+            <label for="password">Repita sua senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+        </p>
+        <p><strong>Gênero:</strong></p>
+        <p>
+            <label1 for="feminino">Feminino</label1>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+        </p>
+        <p>
+            <label1 for="masculino">Masculino</label1>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+        </p>
+        <p>
+            <label1 for="outro">Outro</label1>
+            <input type="radio" id="outro" name="genero" value="outro">
+        </p>
+        <p>
+            <label for="foto"><b>Foto:</b></label>
+            <input type="file" id="foto" name="foto" accept=".png,.svg.image/*" multiple>
+        </p>
+        <hr>
+        <p><strong>Development for:</strong></p>
+        <p>
+            <label1 for="dev1">Python</label1>
+            <input type="checkbox" id="dev1" name="dev1" value="python" checked>
+        </p>
+        <p>
+            <label1 for="dev2">Front-End</label1>
+            <input type="checkbox" id="dev2" name="dev2" value="frontend" checked>
+        </p>
+        <p>
+            <label1 for="dev3">Back-End</label1>
+            <input type="checkbox" id="dev3" name="dev3" value="backend" checked>
+        </p>
+        <hr>
+        <p><strong>Profissional desde:</p></strong>
+        <p>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" value="2020-04-20">
+        </p>
+        <p>
+            <label for="datetime">Date:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2020-04-20T20:00:01">
+        </p>
+        <p>
+            <label for="time">Date:</label>
+            <input type="time" id="time" name="time" value="20:00:01">
+        </p>
+        <hr>
+        <p>
+            <label for="cor"><b>Cor preferida:</b></label>
+            <input type="color" id="cor" name="cor" value="#e6ac00">
+        </p>
+        <hr>
+        <p><strong>Qual seu número da sorte</p></strong>
+        <p>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" min="10" max="50" step="5">
+        </p>
+        <hr>
+        <p>
+            <label for="select">Cargo pretendido:</label><br>
+            <select id="select" name="select" multiple>
+                <optgroup label="Development">
+                    <option value="python" label="Python" selected>
+                    <option value="frontend" label="Front-end">
+                    <option value="backend" label="Back-end">
+                </optgroup>
+                <optgroup label="Infrastructure">
+                    <option value="redes" label="Redes" selected>
+                    <option value="banco de dados" label="Banco de dados">
+                    <option value="gerente banco de dados" label="Gerente">
+                </optgroup>
+
+            </select>
+        </p>
+        <hr>
+        <p>
+            <label for="textarea">Quais suas vitudes e quais seus defeitos:</label><br>
+            <textarea id="textarea" name="textarea" rows="8" cols="10">Esse texto aparece no formulário</textarea>
+        </p>
+        <hr>
+        <p><strong>Pretensão salarial:</p></strong>
+        <p>
+            <label for="range">Salário:</label>
+            <input type="range" id="range" name="range" min="0" max="10" step="2">
+        </p>
+        <p><strong>Pretensão salarial:</p></strong>
+        <p>
+            <label for="range">Salário:</label>
+            <input type="range" id="range" name="range" list="salario">
+            <datalist id="salario">
+                <option value="0" label="R$3.000">
+                <option value="1" label="R$5.000">
+                <option value="2" label="R$7.000">
+            </datalist>
+        </p>
+        <p>
+            <button type="submit"> Enviar</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+</body>
+
+</html>

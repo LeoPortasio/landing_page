@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+p {
+    margin: 20px;
+}
+
+.two-columns {
+    display: flex;
+}
+
+.two-columns .col {
+    display: flex;
+    flex-direction: column;
+    background: lawngreen;
+    margin: 15px;
+    padding: 30px;
+}
+
+.gallery {
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.gallery .img {
+    flex: 1 0 20%;
+    height: 50px;
+    background: rgba(0, 0, 255, 0.514);
+    margin: 10px;
+}
+
+/* para fazer grid o element grid é melhor
+
+o flex é mais indicado para colocar um elemento 
+dentro do outro e flexbilizar a disposição
+destes elementos dentro de outros elementos*/

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ______________________________________ */
+/* h1, p {
+    color: red;
+}
+
+body div section p, 
+body div section h1 {   
+    color: blue;
+} */
+/* ______________________________________ */
+/* .color-red {
+    color: red;
+}
+
+body.error .main-content .color-blue {
+    font-style: italic;
+    color:blue;
+} */
+/* ______________________________________ */
+div {
+    color: initial;
+    margin-left: 20px;
+}
+/*este css diz que a cor da fonte inicial será a padrão da classe
+e não será herdada o que está configurado na classe pai*/
+/* ______________________________________ */
+/* .pai {
+    color: red;
+} 
+
+este css aplica na classe pai a cor vermelha da fonte*/
+
+/* ______________________________________ */
+/* .pai .filha {
+    color: red;
+} */
+/*a cor vermelha da fonte será aplicada na classe filha
+pois, o espaço entre as classe no css diz para aplicar
+a cor vermelha na fonte para a classe que está dentro de outra classe
+ou seja, filha dentro do pai*/
+/* ______________________________________ */
+
+/* .pai.filha {
+    color: red;
+} */
+/* este css configura os atributos para a tag que contém as duas classes*/
+/* ______________________________________ */
+
+/* .pai > .filha {
+    color: red;
+} */
+/*este css configura a filha direta do pai somente, então, se tivermos
+classes filha e filha da filha, será aplicada a cor da fonte vermelha somente 
+para filha, isso no caso das duas classes(filha e filha da filha) tiverem em 
+suas tags no html a classe filha  */
+/* ______________________________________ */
+
+/* .pai > .filha > .filha{
+    color: red;
+} */
+
+/* este css configura a filha da filha, contudo não pode ter uma tag html 
+entre as divs, ex um <span>, neste caso, teríamos que indicar ao css que 
+ em sua especificidade, que tem uma tag antes, assim:
+ .pai > .filha > span > .filha */
+/* ______________________________________ */
+
+/* .pai h1+p {
+    color:red
+} */
+/* seleciona um elemento */
+
+/* este css configura toda tag p que vem logo depois de um h1, tags estas irmãs
+da classe pai, se invertermos as tags aqui no css, ex p+h1, significa que a
+configuração será aplicada no h1 que vem logo depois de um p*/
+
+/* .pai p+h1 {
+    color: yellow; 
+}
+/* seleciona um elemento */
+/* ______________________________________ */
+
+/* .pai h1~p {
+    color: blue;
+} */
+/* seleciona todas as tags <p> depois de uma tag <h1>*/
+/* serve para divs tmb */
+
+/* [meuatributo] {
+    color: pink;
+} */
+/* configura especificamente o atributo meuatributo
+este atributo poderia ter um valor tmb, ficando mais específico */
+
+
+[meuatributo~="valor1"] {
+    color: red;
+}
+
+[meuatributo^="l"] {
+    color: red;
+}
+/* começa com l */
+
+[meuatributo$="l"] {
+    color: red;
+}
+/* termina com l */
+
+[meuatributo*="l"] {
+    color: red;
+}
+/* contém l */
+
+
