@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #0A1128;
+    --white-color: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +14,8 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
-    background-image: url('/assets/img/main_bg.svg');
-    background-size: cover;
-    background-position: center center;
-
+    font-size: 2rem;
+    color: var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,8 +47,25 @@ h6 {
     font-size: 3.5rem;
 }
 
+.white-bg {
+    background: var(--white-color);
+}
 
+.main-bg {
+    background-image: url('/assets/img/main_bg.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
 
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sections {
+    min-height: 100vh;
+}
 
 
 
