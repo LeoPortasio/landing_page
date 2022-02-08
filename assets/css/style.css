@@ -92,12 +92,12 @@ a {
     padding-bottom: 0;
 }
 
-.menu h1 {
+.menu h2 {
     font-size: 2.3rem;
     color: var(--primary-color);
 }
 
-.menu h1 a {
+.menu h2 a {
     color: inherit;
 }
 
