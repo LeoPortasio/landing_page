@@ -76,9 +76,10 @@ p {
 }
 
 .main-content {
-    max-width: 120rem;
+    max-width: 100rem;
     margin: 0 auto;
     padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .sections {
@@ -96,7 +97,7 @@ p {
 }
 
 .menu-spancing {
-    height: 8rem;
+    min-height: 6rem;
 }
 
 .menu-content {
@@ -150,21 +151,19 @@ p {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     position: relative;
-    top: 1rem;
     gap: var(--gap);
-    height: 110vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    bottom: 15rem;
 }
 
 .intro-img img, .intro-img svg {
     max-width: 100%;
-    height: auto;
+    min-height: auto;
 }
 
 .top3-content {
@@ -172,18 +171,19 @@ p {
     flex-flow: column nowrap;
     justify-content: center;
     max-width: 64rem;
-    height: 100vh;
+    min-height: 100vh;
     margin-bottom: 15rem;
     position: relative;
-    top: 12rem;
+    top: 8rem;
 }
 
 .grid-work-content {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    height: 135vh;
+    min-height: 100vh;
     position: relative;
+    top: 10rem;
 }
 
 .grid-main-heading {
@@ -191,14 +191,14 @@ p {
 }
 
 .grid-description {
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
-    height: 100vh;
+    min-height: 120vh;
     counter-reset: grid-counter;
 }
 
