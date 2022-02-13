@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -209,7 +210,6 @@ thead th {
     justify-content: center;
     max-width: 64rem;
     min-height: 100vh;
-    margin-bottom: 0.5rem;
     position: relative;
     top: 1rem;
 }
@@ -218,17 +218,18 @@ thead th {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    min-height: 100vh;
     position: relative;
+    min-height: 100vh;
     top: 3rem;
+    padding-bottom: 0.3rem;
 }
 
 .grid-main-heading {
-    margin-bottom: 1rem;;
+    margin-bottom: 2rem;
 }
 
 .grid-description {
-    margin-bottom: 8rem;
+    margin-bottom: 13rem;
 }
 
 .grid {
@@ -264,6 +265,7 @@ thead th {
     min-height: 100vh;
     position: relative;
     top: 1rem;
+    padding-bottom: 3rem;
 }
 
 .gallery-img {
@@ -287,15 +289,94 @@ thead th {
     overflow-x: auto;
 }
 
+.contact-form {
+    grid-column: span 2;
+}
 
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
 
+.form-group {
+    flex: 1 1 32rem;
+}
 
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
 
+.form-group input, .form-group textarea {
+    border: none;
+    background: var(--primary-color);
+    color: var(--light-gray-color);
+    padding: 1.2rem 1.8rem;
+    width: 100%;
+    font-size: 2rem;
+}
 
+.form-group input:focus, .form-group textarea:focus {
+    box-shadow: 0 0 0.5rem 0.5rem var(--secondary-color);
+}
 
+.form-group label {
+    display: block;
+}
 
+.form-group button {
+    border: 0.2rem solid var(--light-gray-color);
+    background: var(--primary-color);
+    color: var(--light-gray-color);
+    padding: 1.2rem 3rem;
+    font-size: 1.8rem;
+    font-style: italic;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
 
+.form-group button:hover {
+    border: 0.2rem solid var(--primary-color);
+    color: var(--primary-color);
+    background: var(--light-gray-color);
+}
 
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-grid legend {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    color: var(--light-gray-color);
+    text-align: center;
+    font-size: 1.3rem;
+    height: 10rem;
+    padding: 0;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.heart {
+    color: var(--secondary-color);
+}
 
 
 
