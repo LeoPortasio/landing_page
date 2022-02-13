@@ -240,6 +240,14 @@ thead th {
     counter-reset: grid-counter;
 }
 
+.grid-one {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    min-height: 100vh;
+    counter-reset: grid-counter;
+}
+
 .grid h3 {
     font-size: 3rem;
     position: relative;
@@ -378,5 +386,22 @@ body .full-width {
     color: var(--secondary-color);
 }
 
+@media (max-width: 800px) {
+    .intro-content, .grid {
+        grid-template-columns: 1fr;
+    }
 
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
 
+    .gallery-img img {
+        width: 100%
+    }
+
+    .grid-work-content {
+        display: block;
+    }
+}
