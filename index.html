@@ -12,11 +12,13 @@
 </head>
 
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1><a href="#">Logo</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#">Logo</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#top3">top3</a></li>
                     <li><a href="#work">work</a></li>
@@ -278,13 +280,12 @@
             </div>
         </div>
     </section>
-    <div>
-        <footer id="footer" class="footer main-bg">
-            <p>Curso Udemy html5 e css3 - Professor Luiz Otávio Miranda</p>
-            <p><a rel="nofollow" target="_blank" href="https://github.com/LeoPortasio"> @LeoPortasio &#9996; feito com
-                    muito <span class="heart">&#10084;</span></a></p>
-        </footer>
-    </div>
+    <footer id="footer" class="footer main-bg">
+        <p>Curso Udemy html5 e css3 - Professor Luiz Otávio Miranda</p>
+        <p><a rel="nofollow" target="_blank" href="https://github.com/LeoPortasio"> @LeoPortasio &#9996; feito com
+                muito <span class="heart">&#10084;</span></a></p>
+    </footer>
+    <a class="back-to-top" href="#">⥣</a>
 </body>
 
 </html>
